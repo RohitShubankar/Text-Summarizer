@@ -7,22 +7,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
       .comment {
-        width: 40%;
-        height: 100px;
+        width: 95%;
+        height: 400px;
         padding: 10px;
         background-color: hsl(0, 0%, 100%);
         font: 1.4em/1.6em cursive;
         color: #095484;
+        align-items: center;
+        margin: 0;
       }
+      .button {
+        background-color: grey;
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        display: inline-block;
+        font-size: medium;
+        margin: 4px 2px;
+        cursor: pointer;
+        transition-duration: 0.4s;
+        align-self: center;
+      }
+      .button:hover{
+        background-color: #e7e7e7;
+        }
     </style>
 </head>
 <body>
-  <div class="comment">
-    <form action = "http://localhost:5000/" method = "post">
-      <textarea class="comment" placeholder="Enter your Text here..." name="submit"></textarea>
-      <button type="submit">Submit</i></button>
-    </form>
-  </div>
+  
+<h2 style="font-family: cursive; color:black;text-align: center;">Text Summarizer</h2>
+<form action = "http://localhost:5000/" method = "post">
+  <textarea class="comment" placeholder="Enter your Text here..." name="submit"></textarea>
+      <button class="button" type="submit">Submit</button>
+</form>
    
 </body>
 </html>
